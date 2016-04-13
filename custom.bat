@@ -1,6 +1,10 @@
 @echo off
 chcp 1251 >nul
 
+echo custom.bat by Victor Malyshev (@I1PABIJJA) <i1pabijja@gmail.com>
+
+echo init folders...
+
 set CD=%~dp0
 pushd "%~dp0"
 for /d %%I in ("*.zip.bzprj") do (
@@ -12,8 +16,12 @@ set Tools=%CD%\data\tools
 set pht=%CD%\data\tools\ph-tools
 set Repo=%CD%\repositories\patches\main\boot
 
+echo clean dirs...
+
 del %Tools%\*.img
 rmdir /S /Q %Tools%\boot_PORT
+
+echo Repacking boot.img...
 
 ren %ROM%\boot.img boot_PORT.img
 
