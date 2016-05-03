@@ -1,7 +1,7 @@
 @echo off
 chcp 1251 >nul
 
-echo custom.bat by Victor Malyshev (@I1PABIJJA) <i1pabijja@gmail.com>
+echo "custom.bat by Victor Malyshev (@I1PABIJJA) <i1pabijja@gmail.com>"
 
 echo init folders...
 
