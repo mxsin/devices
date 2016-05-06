@@ -28,7 +28,7 @@ call %Tools%\MTK_unpack.bat boot_PORT.img
 
 java -jar %pht%\ph-cr.jar
 java -jar %pht%\ph-id.jar
-java -jar %pht%\ph-us.jar %ROM%
+java -jar %pht%\ph-us.jar "%ROM%"
 
 copy /Y %Repo%\kernel\* %Tools%\boot_PORT\
 copy /Y %Repo%\rmdisk\* %Tools%\boot_PORT\rmdisk\
