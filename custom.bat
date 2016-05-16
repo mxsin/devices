@@ -1,7 +1,8 @@
 @echo off
 chcp 1251 >nul
 
-echo custom.bat by Victor Malyshev (@I1PABIJJA) i1pabijja@gmail.com
+echo Original custom.bat by Victor Malyshev (@I1PABIJJA) i1pabijja@gmail.com
+echo Current custom.bat by Max Pustovalov (@mxsin) <sir.mxp@yandex.ru>
 
 echo init folders...
 
@@ -26,9 +27,9 @@ move /Y %ROM%\boot_PORT.img %Tools%\boot_PORT.img
 
 call %Tools%\MTK_unpack.bat boot_PORT.img 
 
-python %marpt%\marp-cr.py
-python -jar %marpt%\marp-id.py
-python -jar %marpt%\marp-us.py %ROM%
+rem python %marpt%\marp_custom_boot_data.py
+rem python %marpt%\marp_initd_support.py
+rem python %marpt%\marp_updater-script.py %ROM%
 
 copy /Y %Repo%\kernel\* %Tools%\boot_PORT\
 copy /Y %Repo%\rmdisk\* %Tools%\boot_PORT\rmdisk\
