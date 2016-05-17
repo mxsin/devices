@@ -11,7 +11,7 @@ for /d %%I in ("*.zip.bzprj") do (set RD=%%~I)
 
 set ROM=%CD%\%RD%\baseROM
 set Tools=%CD%\data\tools
-set marpt=%CD%\data\tools\marp-tools
+set marpt=%CD%\data\tools\marp_tools
 set Repo=%CD%\repositories\patches\main\boot
 
 echo clean dirs...
