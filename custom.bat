@@ -2,7 +2,7 @@
 chcp 1251 >nul
 
 echo Original custom.bat by Victor Malyshev (@I1PABIJJA) i1pabijja@gmail.com
-echo Current custom.bat by Max Pustovalov (@mxsin) <sir.mxp@yandex.ru>
+echo Current custom.bat by Max Pustovalov (@mxsin) sir.mxp@yandex.ru
 
 echo init folders...
 
