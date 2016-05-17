@@ -29,7 +29,7 @@ call %Tools%\MTK_unpack.bat boot_PORT.img
 
 rem python %marpt%\marp_custom_boot_data.py
 rem python %marpt%\marp_initd_support.py
-rem python %marpt%\marp_updater-script.py %ROM%
+python %marpt%\marp_updater_script.py %ROM% mxsin MultiROM
 
 copy /Y %Repo%\kernel\* %Tools%\boot_PORT\
 copy /Y %Repo%\rmdisk\* %Tools%\boot_PORT\rmdisk\
