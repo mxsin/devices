@@ -1,5 +1,4 @@
 @echo off
-chcp 1251 >nul
 
 echo Original custom.bat by Victor Malyshev (@I1PABIJJA) i1pabijja@gmail.com
 echo Current custom.bat by Max Pustovalov (@mxsin) sir.mxp@yandex.ru
@@ -25,11 +24,14 @@ ren %ROM%\boot.img boot_PORT.img
 
 move /Y %ROM%\boot_PORT.img %Tools%\boot_PORT.img
 
-call %Tools%\MTK_unpack.bat boot_PORT.img 
+call %Tools%\MTK_unpack.bat boot_PORT.img > nul
+
+cd /d %CD%
 
 rem python %marpt%\marp_custom_boot_data.py
 rem python %marpt%\marp_initd_support.py
-python %marpt%\marp_updater_script.py %ROM% mxsin MultiROM
+call %marpt%\marp_updater_script.py %ROM% mxsin MultiROM
+pause
 
 copy /Y %Repo%\kernel\* %Tools%\boot_PORT\
 copy /Y %Repo%\rmdisk\* %Tools%\boot_PORT\rmdisk\
