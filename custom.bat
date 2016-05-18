@@ -16,8 +16,6 @@ set Repo=%CD%\repositories\patches\main\boot
 echo current directory: %CD%
 echo rom directory: %RD%
 echo base rom directory: %RD%
-pause
-exit
 
 echo cleaning tools directory...
 
