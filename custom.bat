@@ -5,12 +5,19 @@ echo custom.bat by Max Pustovalov (@mxsin) sir.mxp@yandex.ru
 echo initialization...
 
 set CD=%~dp0
-for /d %I in ("*.zip.bzprj") do (set RD=%~I)
+cd %CD%
+for /d %%i in ("*.zip.bzprj") do set RD=%%~i
 
 set ROM=%CD%\%RD%\baseROM
 set Tools=%CD%\data\tools
 set marpt=%CD%\data\tools\marp_tools
 set Repo=%CD%\repositories\patches\main\boot
+
+echo current directory: %CD%
+echo rom directory: %RD%
+echo base rom directory: %RD%
+pause
+exit
 
 echo cleaning tools directory...
 
