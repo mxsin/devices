@@ -34,7 +34,7 @@ echo modifying updater-script...
 
 rem python %marpt%\marp_custom_boot_data.py
 rem python %marpt%\marp_initd_support.py
-call %marpt%\marp_updater_script.py %ROM% mxsin MultiROM
+call %marpt%\marp_updater_script.py %ROM% aleksieko MultiROM
 
 echo replacing necessary files...
 
